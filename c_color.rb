@@ -1,7 +1,6 @@
 #!/usr/bin/ruby
 require "cgi"
 #require "./r4"
-# aaa
 
 def set_pattern(base,logo,head,navi,h_text,m_text,foot,btn)
   fh = open("/Library/WebServer/Documents/aoi/aoi_portfolio/c1.css", "w")
