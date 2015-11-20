@@ -24,21 +24,22 @@ print ("明度差＝[#{c1.v_differ(c2)}]\n")
 print ("色差＝[#{h_differ}]\n")
 print ("</hsv>\n")
 print ("<value>")
-
 if c1.v_differ(c2) < 125 && h_differ < 500 then
   print ("そのテキスト色だと見にくいよ〜(ﾉ△･｡)\n")
   print ("あと[#{125-c1.v_differ(c2)}]の明度差と\n")
   print ("あと[#{765-h_differ}]の色差が必要だよ\n")
-
+  print ("<score>#{50}</score>\n")
 elsif c1.v_differ(c2) >= 125 && h_differ < 500 then
   print ("惜しい！\n")
   print ("テキスト色の色差が、あと[#{765-h_differ}]必要だよ\n")
-
+  print ("<score>#{70}</score>\n")
 elsif c1.v_differ(c2) < 125 && h_differ >= 500 then
   print ("惜しい！\n")
   print ("テキスト色の明度差があと[#{125-c1.v_differ(c2)}]必要だよ\n")
+  print ("<score>#{70}</score>\n")
 else
   print ("テキストの色がNICEチョイス！\n")
+  print ("<score>#{100}</score>\n")
 end
 print ("</value>\n")
 print ("</put>\n")

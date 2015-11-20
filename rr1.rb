@@ -74,7 +74,7 @@ end
     di_r = add - @r
     di_g = add - @g
     di_b = add - @b
-    return print("#{di_r},#{di_g},#{di_b}")
+    return print("rgb#{di_r},#{di_g},#{di_b}")
   end
 end
 

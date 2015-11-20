@@ -62,10 +62,19 @@ class Color
   def v_differ(c)
     return ((value() - c.value()).abs).round
   end
-  
+
 #ダイアード
   def h_differ(c)
     return (get_hue() - c.get_hue()).abs
+  end
+
+#ダイアード
+  def diard()
+    add = @max + @min
+    di_r = add - @r
+    di_g = add - @g
+    di_b = add - @b
+    return print("rgb(#{di_r},#{di_g},#{di_b})")
   end
 end
 

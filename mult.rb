@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 require "cgi"
+require "./class"
 
 def set_btn(btn2)
   fh = open("/Library/WebServer/Documents/aoi/aoi_portfolio/c1.css", "a")
@@ -9,7 +10,7 @@ end
 
 data = CGI.new
 
-btn2 = data["btn2"]
+btn2 = data["btn2"].to_s
 
 # ここから先は出力
 print "Content-type: text/xml\n\n"
