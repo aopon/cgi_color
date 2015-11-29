@@ -6,14 +6,14 @@ def set_pattern(base,logo,head,navi,h_text,m_text,foot,btn)
   fh = open("/Library/WebServer/Documents/aoi/aoi_portfolio/c1.css", "w")
     fh.printf("
     body{background-color:##{base};}
-    #header{background-color:##{head};}
-    #header a{color:##{logo};}
+    header{background-color:##{head};}
+    #logo a{color:##{logo};}
+    nav li a{color:##{navi};}
     .h_text{color:##{h_text};}
     .m_text{color:##{m_text};}
     .button a{background-color:##{btn};}
     .button a:nth-child(2){background-color:##{btn};}
-    #footer{background-color:##{foot};}
-    #lnav li a{color:##{navi};}");
+    footer{background-color:##{foot};}");
   fh.close
 end
 

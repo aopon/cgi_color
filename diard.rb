@@ -31,7 +31,7 @@ print ("<put>\n")
 print ("<judge>")
 if c1.h_differ(c2) == 180 then
   print ("ナイスダイアード！調和のとれた良いアクセントカラーを選べたね！100点満点！\n")
-elsif (160 <= c1.h_differ(c2)) && (c1.h_differ(c2) <= 200) then
+elsif (150 <= c1.h_differ(c2)) && (c1.h_differ(c2) <= 210) then
   print ("プチダイアード！もう少し改善すると良くなるよ！80点！\n")
 else
   print ("その色だと、メインカラーとの調和がとれて無いよ〜!!\n")
