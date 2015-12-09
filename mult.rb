@@ -3,7 +3,7 @@ require "cgi"
 require "./class"
 
 def set_btn(btn2)
-  fh = open("/Library/WebServer/Documents/aoi/aoi_portfolio/c1.css", "a")
+  fh = open("/Library/WebServer/Documents/aoi/aoi_portfolio/c3.css", "a")
     fh.printf(".button a:nth-child(2){background-color:##{btn2};}");
   fh.close
 end
