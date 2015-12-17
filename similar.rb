@@ -16,11 +16,11 @@ print "Content-type: text/xml\n\n"
 print ("<put>\n")
 print ("<judge>")
 if (0 <= c1.h_differ(c2)) && (c1.h_differ(c2) <= 45) then
-  print ("まとまりのある類似色を選べたね！調和がとれた組み合わせでGOOD！100点満点！\n")
+  print ("メインカラーの調和性が最高だね。ナイスチョイス！\n")
   print ("<score>#{100}</score>\n")
 else
-  print ("その色だと、バランスの悪い色になってしまっているよ〜!!メインカラーと似た色を選択しよう！\n")
-  print ("<score>#{50}</score>\n")
+  print ("メインカラーの調和性が悪いよ。類似色を選ぶとまとまるよ。\n")
+  print ("<score>#{60}</score>\n")
 end
 print ("</judge>\n")
 #ダイアードのRGB数値
