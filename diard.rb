@@ -31,7 +31,7 @@ elsif (135 <= c1.h_differ(c2)) && (c1.h_differ(c2) <= 225) then
   print ("ボタンの調和性が良いね。ナイスチョイス！\n")
   print ("<score>#{100}</score>\n")
 else
-  print ("ボタンの調和性が悪いよ。メインカラーの補色の関係にある色を選ぶぼう!\n")
+  print ("ボタンの調和性が悪いよ。メインカラーの補色関係になるように色相を調整しよう!\n")
   print ("<score>#{60}</score>\n")
 end
 print ("</judge>\n")
