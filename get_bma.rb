@@ -12,7 +12,6 @@ def set_kind(k)
   for i in 0..array.size-1
     if array[i][0] == k then
       print("<color>\n<b>#{array[i][2]}</b>\n<m>#{array[i][3]}</m>\n<a>#{array[i][4]}</a>\n</color>\n")
-
       #fh =   open("/Library/WebServer/Documents/aoi/aoi_portfolio/c1.css", "w")
       #  fh.printf(
       #  "body{background-color:#{array[i][2]};}
